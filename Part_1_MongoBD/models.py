@@ -2,11 +2,11 @@
 from pymongo.mongo_client import MongoClient
 from pymongo.server_api import ServerApi
 import mongoengine as me
-import configparser
 
 
 config = configparser.ConfigParser()
-config.read('config.ini')
+config.read('config.ini')import configparser
+
 
 mongo_user = config.get('DB', 'user')
 mongodb_pass = config.get('DB', 'pass')
