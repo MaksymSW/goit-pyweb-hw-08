@@ -26,8 +26,6 @@ try:
 except Exception as e:
     print(e)
 
-# connect(host=f"""mongodb+srv://{mongo_user}:{mongodb_pass}@{domain}/{db_name}?retryWrites=true&w=majority""", ssl=True)
-# me.connect(host=uri)
 
 me.connect(db_name, host=uri)
 
